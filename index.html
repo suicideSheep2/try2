@@ -46,11 +46,19 @@
     
     <div class="lightbox" id="imageModal">
         <div class="lightbox-content">
-            <button class="lightbox-close" id="closeModal">&times;</button>
-            <button class="lightbox-nav prev" id="prevButton">&#10094;</button>
-            <button class="lightbox-nav next" id="nextButton">&#10095;</button>
+            <button class="lightbox-close" id="closeModal">×</button>
+            <button class="lightbox-nav prev" id="prevButton">❮</button>
+            <button class="lightbox-nav next" id="nextButton">❯</button>
             
             <img class="lightbox-image" id="modalImage" alt="Enlarged image">
+            
+            <!-- Add download button here -->
+            <button class="lightbox-download" id="downloadButton" title="Download Image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="none" d="M0 0h24v24H0z"/>
+                    <path d="M13 10h5l-6 6-6-6h5V3h2v7zm-9 9h16v-2H4v2z" fill="currentColor"/>
+                </svg>
+            </button>
             
             <div class="lightbox-info" id="imageInfo"></div>
         </div>
